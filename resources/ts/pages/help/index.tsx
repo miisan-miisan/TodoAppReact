@@ -1,6 +1,6 @@
 import React from 'react';
 
-const HelpPage: React.VFC = () => {
+const HelpPage: React.FC = () => {
   return (
     <div className="align-center">
       <h1>ヘルプ</h1>
