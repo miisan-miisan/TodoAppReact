@@ -16,9 +16,11 @@ class TaskPolicy
      * @param  \App\Models\User  $user
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function viewAny(User $user)
+    public function checkUser(User $user, Task $task)
     {
-        //
+        if ($user->id === $task->user_id) {
+            return true;
+        }
     }
 
     /**
